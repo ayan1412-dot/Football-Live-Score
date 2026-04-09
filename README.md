@@ -5,9 +5,8 @@ A modern and visually engaging football live score website inspired by the UEFA 
 ---
 
 ## 🌐 Live Preview
-
-*(Add your GitHub Pages link here after deployment)*
-Example: https://yourusername.github.io/uefa-live-score-website/
+[
+(https://ayan1412-dot.github.io/Football-Live-Score/)
 
 ---
 
