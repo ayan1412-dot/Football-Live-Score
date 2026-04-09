@@ -81,22 +81,30 @@ nav ul li {
     z-index: 2;
     margin-top: 20px;
 }
-.logos {
+
+.match-display {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
     align-items: center;
-    margin-top: 20px;
+    justify-content: center;
     gap: 20px;
 }
 .teamlogos {
-    width: 85px;
+    width: 80px;
     height: auto;
     mix-blend-mode: normal;
     margin: 0;
     padding: 0;
+    margin-top: 20px;
+    margin-bottom: 7px;
+
 }
 .real-madrid {
     width:68px;
+}
+.sport {
+    width: 70px;
+    margin-bottom: 20px;
 }
 .scoreline {
     color: white;
@@ -119,4 +127,35 @@ img{
 .scoreline{
     justify-content: center;
     display: flex;
+}
+.fulltime {
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 5px 0;
+}
+.box2{
+position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    border: 2px solid black;
+    width: 500px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 1.3s ease-in;
+    z-index: 2;
+    margin-top: 20px;
+}.matchinfo2{
+    text-align: center;
+    color: white;
+    margin: 10px 0;
+}
+.box2:hover{
+    
+  transform: translateY(-50%) scale(1.3);
 }
