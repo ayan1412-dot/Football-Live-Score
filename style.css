@@ -39,8 +39,13 @@ nav ul li {
 .hero{
     position: relative;
     width: 100%;
-    height: 100vh; /* Full viewport height */
+    min-height: 100vh; /* Full viewport height */
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background: #000;
 }
 
 .background-video {
@@ -53,15 +58,75 @@ nav ul li {
     z-index: 1;
 }
 
-.hero h2 {
+.hero::before {
+    content: "";
     position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    font-size: 2.5em;
-    text-align: center;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
     z-index: 2;
+}
+
+.container{
+    position: relative;
+    z-index: 3;
+    width: min(420px, 90%);
+    padding: 36px 28px;
+    background: rgba(0, 0, 0, 0.68);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 18px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(12px);
+}
+
+.container .head {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+label.name,
+label.pass {
+    display: block;
+    margin-top: 16px;
+}
+
+label input {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+}
+
+label input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.btn{
+    background-color: #1a73e8;
+    color: white;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    display: block;
+    margin: 28px auto 0 auto;
+    border-radius: 10px;
+    width: 100%;
+    padding: 14px 0;
+    border: none;
+    font-size: 1rem;
+    transition: background-color 0.25s ease;
+}
+
+.btn:hover {
+    background-color: #1565c0;
+}
+
+.hero h2 {
+    display: none;
 }
 
 .box {
@@ -158,4 +223,40 @@ position: absolute;
 .box2:hover{
     
   transform: translateY(-50%) scale(1.3);
+}
+.container{
+    border: 2px solid black;
+   position: flex;
+    width: 670px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+
+}
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+.head{
+    display: flex;
+    justify-content: center;
+}
+.pass{
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+.btn{
+    background-color: blue;
+    color: white;
+    font-family: Arial;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 200px;
 }
