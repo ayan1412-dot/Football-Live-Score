@@ -18,6 +18,7 @@ A modern and visually engaging football live score website inspired by the UEFA 
 * 🖼️ Team logos and match details
 * ✨ Hover animation effects
 * 🎨 Clean and modern design
+*    Login Panel Design 
 
 ---
 
